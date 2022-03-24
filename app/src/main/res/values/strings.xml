@@ -1,0 +1,172 @@
+<resources>
+    <!-- Main -->
+    <string name="app_name">Wildlife Survival Test</string>
+    <string name="app_version">Version %s</string>
+
+    <!-- Start -->
+    <string name="start_button">Start</string>
+    <string name="start_description">One of our scientists asked: "How much hard is it to survive in the wild without having any survival skills?" Other scientists became interested in this issue and created a test
+        to help find it out. Don\'t be shy, please sit down, today you will be among the test subjects!</string>
+    <string name="start_button_continue">Continue</string>
+    <string name="start_description_continue">This test subject won\'t last even a couple of hours in the wild, that\'s obvious!\n\nOh, are you here? Get back to the test, damn boy!</string>
+
+    <!-- Game -->
+    <string name="game_button_next">Next</string>
+    <string name="game_button_finish">Finish</string>
+    <string name="game_questions_counter">%1$d/%2$d</string>
+
+    <!-- Result -->
+    <string name="result_title">Test passed!</string>
+    <string name="result_text_result_definitely_not_survive">You don\'t really stand a chance of survival, test subject. Most likely, the first spider you meet will kill you, even if it is not poisonous. Scientists believe that you will simply die of fright when you see it.
+        To be more precise, you have about a %d%% chance of surviving in the wild, so it\'s better to stay at home and enjoy the city life!</string>
+    <string name="result_text_result_probably_not_survive">When scientists saw you for the first time, many of them said that you would not last even an hour in the wild, and they started to bet real money on it. But they were wrong, you can last a couple of hours
+        because you have about a %d%% chance for surviving in the wild. Now many scientists will have to eat only bread for a whole month, but still you should be careful in the wild, because you definitely won\'t last a couple of days there!</string>
+    <string name="result_text_result_close_to_survive">You know, the chances of you surviving in the wild are pretty good, about %d%%. But scientists believe that in your case it\'s like a coin toss: you may be lucky, or you may not.
+        Therefore, you\'re not bad, but if you stay alone in the wild, less snot, you have a hard way!</string>
+    <string name="result_text_result_survive">You\'ve scored about a %d%% chance for surviving in the wild, scientists didn\'t expect you to have that much potential. Many of them were arguing  and fighting, and most likely soon the test will be destroyed and completely rewritten.
+        But until this happens, you can celebrate your victory, because you are able to survive!</string>
+    <string name="result_text_result_definitely_survive">We decided to call Bear Grylls to tell him about it. After all, scientists believe that you are a real master of survival. They are sure that if they give you a stone in your hands and strip you naked, this will not prevent
+        you from living in the forest for your entire life. As a result, you scored a record %d%% chance to survive in the wild. Only a few are capable of this, congratulations!</string>
+    <string name="result_text_notice">Scientists can finally relax and return home to their families, because writing such a super scientific test is not an easy task!\n
+        If you liked the app, rate it or share the result with your friends, so that you can determine who of you can survive and who will be eaten by snails at the first day!\n
+        If you want more tests like this one, support the scientists and their families, this way you will help to speed up the scientific process (%s) :) Good luck!\n</string>
+    <string name="result_button_restart">Take test again</string>
+    <string name="result_button_pay">Feed scientists</string>
+    <string name="result_test_share">I passed a Wildlife Survival Test with this result:\n%s\nAny guesses about YOUR result?:)\n\nhttps://play.google.com/store/apps/details?id=com.wildlifesurvivaltest</string>
+
+    <!-- Errors -->
+    <string name="dialog_connection_error_title">Internet connection error</string>
+    <string name="dialog_connection_error_description">Oops, you need an Internet connection to use this app. Check your connection and try again</string>
+    <string name="dialog_connection_error_button">Close</string>
+    <string name="toast_choose_error">Please select an answer before further proceeding</string>
+
+    <!-- Questions -->
+    <string name="question_1">First, we should explain you the rules of the game, test subject. With a high probability, you may not find the answer that suits you, because scientists are smart and won\'t let you choose what you want.
+        Choose what is less likely to kill you in a dark and cold forest, so we will test your wits, okay?</string>
+    <string name="question_1_answer_1">Sounds pretty scary. Are you sure you are scientists?</string>
+    <string name="question_1_answer_2">Don\'t try to scare me, let\'s take your test!</string>
+    <string name="question_1_answer_3">Got it, let\'s go!</string>
+
+    <string name="question_2">You woke up in a cold sweat from a nightmare, looked around and realized that you were in some kind of a forest wilderness. How have you got here? No idea. The first thing you will do in such a situation:</string>
+    <string name="question_2_answer_1">I\'ll remember everything that I have learned in my life, and I\'ll understand that life hasn\'t prepare me for this. Looks like this is the end.</string>
+    <string name="question_2_answer_2">Most likely, I\'ll start crying loudly, maybe someone will hear and resque me!</string>
+    <string name="question_2_answer_3">It\'s a pity I don\’t have one more pair of pants, because it\'ll be problematic to wash these after realizing it\'s my last day</string>
+    <string name="question_2_answer_4">It\'s a pity that as a child I watched cartoons, and not the program "Ultimate Survival" with Bear Grylls, maybe I could have lasted a couple of days longer!</string>
+
+    <string name="question_3">No matter how upsetting is the situation in which you found yourself, you have one useful little thing lying in your pocket, what is it?</string>
+    <string name="question_3_answer_1">Condoms</string>
+    <string name="question_3_answer_2">Mini Hadron Collider</string>
+    <string name="question_3_answer_3">Toilet roll</string>
+    <string name="question_3_answer_4">Garbage bag packaging</string>
+
+    <string name="question_4">You are standing somewhere in the forest. You have 4 cardinal directions to choose from, where will you go and why?</string>
+    <string name="question_4_answer_1">I\'ll go forward and rely on a blind luck.</string>
+    <string name="question_4_answer_2">I\'ll go back, because when I turned around, I saw moss! It is a pity that I forgot the school lessons and don\'t remember what it means.</string>
+    <string name="question_4_answer_3">I\'ll go to the left, like my father, who left for bread 15 years ago.</string>
+    <string name="question_4_answer_4">I\'ll go to the right and turn right every 100 steps, this should help!</string>
+
+    <string name="question_5">It\'s good that you are … by profession. Maybe it will help you survive!</string>
+    <string name="question_5_answer_1">Stripper</string>
+    <string name="question_5_answer_2">Beer taster</string>
+    <string name="question_5_answer_3">Director of an adult diaper company</string>
+    <string name="question_5_answer_4">Unemployed and homeless</string>
+
+    <string name="question_6">You also have one ability that can be useful for survival:</string>
+    <string name="question_6_answer_1">Hot hands. In the process of life, I have trained my hands so much that I can heat food with them faster than a microwave.</string>
+    <string name="question_6_answer_2">Iron stomach. I can eat everything from sand to tree bark and still be alive.</string>
+    <string name="question_6_answer_3">Immune to pain. As a child, I was beaten so often by my peers that I stopped feeling pain!</string>
+
+    <string name="question_7">Imagine a situation. You are walking through a dark forest and suddenly you notice that someone is moving towards you. Looking closer, you understand that it is a bear! And most importantly, he noticed you! Your actions?</string>
+    <string name="question_7_answer_1">Gotta run! No wonder I ran in the morning every day (at McDonald\'s).</string>
+    <string name="question_7_answer_2">There is nowhere to run! I need to take the biggest stick and remind what Mortal Kombat taught me.</string>
+    <string name="question_7_answer_3">I am Russian! A bear in the forest is an excellent means of transportation, like a business class taxi, otherwise I was already tired of walking. I\'m going to saddle him, he\'s just in time! Come here buddy!</string>
+    <string name="question_7_answer_4">I\'ll start screaming and crying, if I haven\'t cried out all the tears yet. Perhaps the bear will be frightened by the noise and run away.</string>
+
+    <string name="question_8">You are feeling severe hunger, so you need to try to get food in order to survive. This time you are lucky, scientists give you several food options to choose from, which one will you choose?</string>
+    <string name="question_8_answer_1">A couple of Australian cockroaches</string>
+    <string name="question_8_answer_2">Portion of mushrooms of unknown origin (looks edible)</string>
+    <string name="question_8_answer_3">Handful of belladonna</string>
+    <string name="question_8_answer_4">A couple of large green caterpillars</string>
+
+    <string name="question_9">Let\'s move away from the topic of your possible imminent death in the forest and find out which of the qualities below are more suitable for you as a person.</string>
+    <string name="question_9_answer_1">I am cunning, able to think sensibly, analyze the situation, but I am not capable of any bold deeds.</string>
+    <string name="question_9_answer_2">I am strong, I have been involved in sports for the whole my life, but at the same time I have skipped school lessons and am not able to solve a simple first grade math problem.</string>
+    <string name="question_9_answer_3">I am very smart, but I am not able to pull up on the uneven bars once, and after the first push-up, I will most likely faint.</string>
+    <string name="question_9_answer_4">I am a jack-of-all-trades, able to build a house out of clay and create weapons out of sand, but at the same time I am also afraid of almost everything in the world.</string>
+
+    <string name="question_10">Imagine that for survival in the forest, scientists are ready to give you a weapon of your choice, it can help you defend yourself from predators and get food, which weapon will you choose?</string>
+    <string name="question_10_answer_1">Shiv</string>
+    <string name="question_10_answer_2">Pointed piece of glass</string>
+    <string name="question_10_answer_3">Wooden homemade spear</string>
+
+    <string name="question_11">Imagine that the weapon did not help and you were bitten by a wild creature. Whose bite do you think will give you the best chance of survival?</string>
+    <string name="question_11_answer_1">Grey wolf</string>
+    <string name="question_11_answer_2">Reticulated python</string>
+    <string name="question_11_answer_3">Tarantula</string>
+    <string name="question_11_answer_4">Mad hermit man</string>
+
+    <string name="question_12">Sooner or later you will be thirsty. You\'re in a forest, what do you think is a good indicator of water sources?</string>
+    <string name="question_12_answer_1">The sun will show me the way, I will look for the rare sun rays and move in their direction.</string>
+    <string name="question_12_answer_2">It seemed to me that from one side a bird was whistling: "One, two, Freddy\'s coming for you". I should go and see if a certain Freddy can save me!</string>
+    <string name="question_12_answer_3">I trust the wind. I will determine in which direction it blows and go with a fair wind!</string>
+    <string name="question_12_answer_4">If I don\'t go to the water, sooner or later the water will come to me. I\'d rather create some water collectors and wait for the rain.
+        My grandmother was a witch and taught me a couple of tricks to call rain, it\'s time to apply them!</string>
+
+    <string name="question_13">In the wild, willy-nilly, you will have to start eating insects, especially if your stay in the forest will be long. What insects do you think you can eat?</string>
+    <string name="question_13_answer_1">I need to look for large insects - they are nutritious. There\'s always a chance they\'ll eat me first though!</string>
+    <string name="question_13_answer_2">As a child, I heard that there is a lot of protein in ants, so the first thing I will start looking for is anthills.</string>
+    <string name="question_13_answer_3">I will eat brightly colored insects that are also easier to find.</string>
+    <string name="question_13_answer_4">All of the above can be eaten, in any case it\'s better than my food in the student days.</string>
+
+    <string name="question_14">Let\'s complicate the task and suppose that you ended up in a wild forest in winter and, walking through the forest, came to the river, but it was covered with ice.
+        By the color of the ice you can determine how thick this ice is. What color should the ice be to be safe to walk on?</string>
+    <string name="question_14_answer_1">We\'re not in the store to buy colorful ice lolly, so the ice must be white!</string>
+    <string name="question_14_answer_2">Blue, because this is my favorite color.</string>
+    <string name="question_14_answer_3">I\'ve been playing Dota 2 for the whole my life and my weight is less than 50 kg, any ice will hold me, so the color is not important!</string>
+    <string name="question_14_answer_4">Yellow, because it is a sign that people have passed here before me.</string>
+
+    <string name="question_15">Agree, finding water in winter is not so difficult, because it is everywhere in the form of snow and ice. But which of the following is the best use for obtaining drinking water?</string>
+    <string name="question_15_answer_1">Fresh snow, because it\'s clean and I think it can be eaten instead of cereal for breakfast to quench your thirst.</string>
+    <string name="question_15_answer_2">Hard-packed snow because more water settles in it.</string>
+    <string name="question_15_answer_3">Yellow snow, because it contains more salt and the taste is felt more distinctly.</string>
+    <string name="question_15_answer_4">Any ice. More water can be obtained from it than from snow, while spending less energy.</string>
+
+    <string name="question_16">Let\'s test your survival instinct. If suddenly at night in the wild forest you were not alone, but together with your friend. It started to rain, thunder and lightning.
+        Your friend has a phone and is trying to get mobile signal. And suddenly lightning strikes him! In addition to the obvious shock, you understand that you need to take some action, what will you do?</string>
+    <string name="question_16_answer_1">I won\'t touch him, because I don\'t want to suffer with him. So I\'ll just wait until he wakes up. If not, I\'ll loot him pockets and move on.</string>
+    <string name="question_16_answer_2">I\'ll bury it shallow to ground it, and if it doesn\'t help, then rest in peace.</string>
+    <string name="question_16_answer_3">He was a close friend of mine, so I\'ll lean over and start pounding his chest, yelling: \"Wake up, don\'t die, you haven\'t given me two beers back yet!\"</string>
+
+    <string name="question_17">Unfortunately, you failed to resurrect your friend and now you need to gather your thoughts and move on. However, this is not so easy, because you were close, and no one else will return two beers to you.
+        What thoughts should be kept in mind so as not to finally fall apart?</string>
+    <string name="question_17_answer_1">Thoughts that while a friend seems to be still warm, he will help warm up the food.</string>
+    <string name="question_17_answer_2">Thoughts that it will definitely not get worse, so you can be calmer.</string>
+    <string name="question_17_answer_3">Thoughts that a warm blanket, food and favorite cartoons about Winx fairies are waiting for you at home. We must continue to live at least for the sake of it!</string>
+    <string name="question_17_answer_4">Thoughts that you seem to have a mobile connection, you just need to climb a little higher and call for help!</string>
+
+    <string name="question_18">You seem to have come to terms with the loss of a friend. In order not to freeze to death and not repeat his fate, you need to choose a place where you will arrange an overnight stay. Which of the options would you prefer?</string>
+    <string name="question_18_answer_1">I will choose an open area. If I\ll build a fire, it\'s more likely to be noticed.</string>
+    <string name="question_18_answer_2">I will choose a closed flat area to get as much shelter from the wind as possible.</string>
+    <string name="question_18_answer_3">I will choose dense shrubs. It should be warmer and easier to make a fire there.</string>
+
+    <string name="question_19">To build a fire, the scientists will give you one thing to choose from this time, which one do you prefer? (Be aware, the situation with the friend is still going on)</string>
+    <string name="question_19_answer_1">Lighter</string>
+    <string name="question_19_answer_2">Hunting matches</string>
+    <string name="question_19_answer_3">Lighter fluid</string>
+    <string name="question_19_answer_4">Flint</string>
+
+    <string name="question_20">Well, the last question. What advice would you give to any person who finds himself in the forest all alone and does not know how to survive?</string>
+    <string name="question_20_answer_1">Pray to God if you believe in him, and he will resque you!</string>
+    <string name="question_20_answer_2">If you woke up and found yourself in some strange dark place, there are 2 options: these are all the tricks of scientists and you are just a test subject, or you, unwittingly, turned out to be a participant in the Hunger Games (if you are not a Mockingjay, then good luck)</string>
+    <string name="question_20_answer_3">Get used to the forest life. Being a hermit is not so bad, a couple of thousand years ago people lived somehow, so you will survive too!</string>
+
+    <!-- Untranslatable -->
+    <string name="app_ad_id" translatable="false">ca-app-pub-6102855810007577~3293871467</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-6102855810007577/5536891426</string>
+    <string name="video_ad_unit_id" translatable="false">ca-app-pub-6102855810007577/5598926013</string>
+    <string name="event_name_rate_us" translatable="false">rate_us</string>
+    <string name="event_name_restart" translatable="false">restart</string>
+    <string name="event_name_question_form" translatable="false">question_%d</string>
+    <string name="event_parameter_answer" translatable="false">answer</string>
+    <string name="event_parameter_locale" translatable="false">locale</string>
+</resources>
