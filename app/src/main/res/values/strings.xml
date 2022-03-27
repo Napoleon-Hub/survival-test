@@ -28,6 +28,8 @@
     <string name="result_text_result_definitely_survive">We decided to call Bear Grylls to tell him about it. After all, scientists believe that you are a real master of survival. They are sure that if they give you a stone in your hands and strip you naked, this will not prevent
         you from living in the forest for your entire life. As a result, you scored a record %d%% chance to survive in the wild. Only a few are capable of this, congratulations!</string>
     <string name="result_text_notice">Scientists can finally relax and return home to their families, because writing such a super scientific test is not an easy task!\n
+        If you liked the app, rate it or share the result with your friends, so that you can determine who of you can survive and who will be eaten by snails at the first day!\n</string>
+    <string name="result_text_full">Scientists can finally relax and return home to their families, because writing such a super scientific test is not an easy task!\n
         If you liked the app, rate it or share the result with your friends, so that you can determine who of you can survive and who will be eaten by snails at the first day!\n
         If you want more tests like this one, support the scientists and their families, this way you will help to speed up the scientific process (%s) :) Good luck!\n</string>
     <string name="result_button_restart">Take test again</string>

@@ -17,6 +17,7 @@ import com.wildlifesurvivaltest.ui.base.BaseFragment
 import com.wildlifesurvivaltest.utils.MAX_POINTS
 import com.wildlifesurvivaltest.utils.extentions.setOnClickListener
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.wildlifesurvivaltest.utils.extentions.disable
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -63,7 +64,12 @@ class ResultFragment : BaseFragment() {
 
     private fun initObservers() {
         viewModel.skuDetails.observe(viewLifecycleOwner) { scuDetails ->
-            binding.tvResultNotice.text = getString(R.string.result_text_notice, scuDetails?.price)
+            if (scuDetails?.price != null) {
+                binding.tvResultNotice.text = getString(R.string.result_text_full, scuDetails.price)
+            } else {
+                binding.tvResultNotice.text = getString(R.string.result_text_notice)
+                binding.btnPay.disable()
+            }
         }
     }
 

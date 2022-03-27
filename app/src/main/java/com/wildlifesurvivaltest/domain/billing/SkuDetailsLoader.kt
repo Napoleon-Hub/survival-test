@@ -4,13 +4,13 @@ import com.android.billingclient.api.BillingClient
 import com.android.billingclient.api.SkuDetails
 import com.android.billingclient.api.SkuDetailsParams
 import com.android.billingclient.api.querySkuDetails
+import com.google.firebase.crashlytics.FirebaseCrashlytics
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 class SkuDetailsLoader @Inject constructor(private val billingClient: BillingClient) {
 
-    @Throws(Exception::class)
     suspend fun getProductDetails(): SkuDetails? {
         val params = SkuDetailsParams.newBuilder()
             .setSkusList(skuList)
@@ -20,10 +20,13 @@ class SkuDetailsLoader @Inject constructor(private val billingClient: BillingCli
             billingClient.querySkuDetails(params)
         }
         val code = result.billingResult.responseCode
-        if (code == BillingClient.BillingResponseCode.OK && result.skuDetailsList != null
+        return if (code == BillingClient.BillingResponseCode.OK && result.skuDetailsList != null
             && result.skuDetailsList!!.isNotEmpty()) {
-            return result.skuDetailsList?.get(0)
-        } else throw Exception("Unable getting sku details, code: $code")
+            result.skuDetailsList?.get(0)
+        } else {
+            FirebaseCrashlytics.getInstance().log("Unable getting sku details, code: $code")
+            null
+        }
     }
 
     companion object {
