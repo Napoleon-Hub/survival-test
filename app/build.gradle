@@ -32,12 +32,6 @@ android {
         versionName appConfig.versionName
 
         archivesBaseName = "${rootProject.name.toLowerCase()}-${appConfig.versionName}"
-
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
-            }
-        }
     }
 
     buildTypes {
@@ -49,12 +43,16 @@ android {
     }
 
     buildFeatures {
-        viewBinding true
+        compose true
     }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.1.1'
     }
 
     kotlinOptions {
@@ -65,29 +63,33 @@ android {
 
 dependencies {
 
-    // Common
+    // Android
     implementation appDependencies.coreKtx
-    implementation appDependencies.appCompat
-    implementation appDependencies.material
-    implementation appDependencies.constraintLayout
-    implementation appDependencies.fragmentKtx
+
+    // Jetpack Compose
+    implementation appDependencies.composeUi
+    implementation appDependencies.composeUiTooling
+    implementation appDependencies.composeFoundation
+    implementation appDependencies.composeMaterial
+    implementation appDependencies.composeRuntimeLiveData
+    implementation appDependencies.lottieCompose
+    implementation appDependencies.constraintLayoutCompose
+
+    // Activity
+    implementation appDependencies.activityCompose
+
+    // Lifecycle
+    implementation appDependencies.lifecycleViewModel
+    implementation appDependencies.lifecycleViewModelCompose
+    implementation appDependencies.lifecycleLiveData
 
     // Hilt
     implementation appDependencies.hilt
+    implementation appDependencies.hiltNavigationCompose
     kapt           appDependencies.hiltCompiler
 
     // Navigation Components
-    implementation appDependencies.navigationFragmentKtx
     implementation appDependencies.navigationUiKtx
-
-    // Room
-    implementation appDependencies.roomRuntime
-    implementation appDependencies.roomKtx
-    kapt           appDependencies.roomCompiler
-
-    // Jetpack
-    implementation appDependencies.lifecycleViewModel
-    implementation appDependencies.lifecycleLiveData
 
     // Coroutines
     implementation appDependencies.coroutinesCore
@@ -101,9 +103,6 @@ dependencies {
     // Ads
     implementation appDependencies.playServices
     constraints {implementation(appDependencies.workRuntime)}
-
-    // Gson
-    implementation appDependencies.gson
 
     //Billing
     implementation appDependencies.billing

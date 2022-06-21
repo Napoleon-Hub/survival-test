@@ -33,6 +33,7 @@
         If you liked the app, rate it or share the result with your friends, so that you can determine who of you can survive and who will be eaten by snails at the first day!\n
         If you want more tests like this one, support the scientists and their families, this way you will help to speed up the scientific process (%s) :) Good luck!\n</string>
     <string name="result_button_restart">Take test again</string>
+    <string name="result_button_another_apps">Another tests</string>
     <string name="result_button_pay">Feed scientists</string>
     <string name="result_test_share">I passed a Wildlife Survival Test with this result:\n%s\nAny guesses about YOUR result?:)\n\nhttps://play.google.com/store/apps/details?id=com.wildlifesurvivaltest</string>
 
@@ -166,9 +167,5 @@
     <string name="app_ad_id" translatable="false">ca-app-pub-6102855810007577~3293871467</string>
     <string name="banner_ad_unit_id" translatable="false">ca-app-pub-6102855810007577/5536891426</string>
     <string name="video_ad_unit_id" translatable="false">ca-app-pub-6102855810007577/5598926013</string>
-    <string name="event_name_rate_us" translatable="false">rate_us</string>
-    <string name="event_name_restart" translatable="false">restart</string>
-    <string name="event_name_question_form" translatable="false">question_%d</string>
-    <string name="event_parameter_answer" translatable="false">answer</string>
-    <string name="event_parameter_locale" translatable="false">locale</string>
+
 </resources>

@@ -34,6 +34,7 @@
         Если тебе понравилось приложение, оцени его или поделись результатом со своими друзьями, чтобы вместе вы смогли определить, кто из вас способен выжить, а кого в первый же день съедят улитки!)\n
         Если хочешь больше подобных тестов, поддержи ученых и их семьи, так ты поможешь ускорить научный процесс(%s) :) Хорошего настроения!\n</string>
     <string name="result_button_restart">Перепройти тест</string>
+    <string name="result_button_another_apps">Другие тесты</string>
     <string name="result_button_pay">Покормить ученых</string>
     <string name="result_test_share">Я прошел тест на выживание в дикой природе с таким результатом:\n%s\nКак думаешь, а ты бы выжил?)\n\nhttps://play.google.com/store/apps/details?id=com.wildlifesurvivaltest</string>
 

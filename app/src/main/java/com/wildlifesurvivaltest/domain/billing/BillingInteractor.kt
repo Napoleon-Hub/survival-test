@@ -33,10 +33,4 @@ class BillingInteractor @Inject constructor(
             }
         }
     }
-
-//    fun disconnect() {
-//        billingScope.cancel()
-//        billingClient.endConnection()
-//    }
-
 }

@@ -2,7 +2,9 @@ package com.wildlifesurvivaltest.di
 
 import android.content.Context
 import android.content.res.Resources
-import com.wildlifesurvivaltest.data.room.QuestionsRoomDatabase
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -16,13 +18,14 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideRoom(@ApplicationContext context: Context): QuestionsRoomDatabase {
-        return QuestionsRoomDatabase.getDatabase(context)
+    fun provideResources(@ApplicationContext context: Context): Resources {
+        return context.resources
     }
 
     @Provides
     @Singleton
-    fun provideResources(@ApplicationContext context: Context): Resources {
-        return context.resources
+    fun provideFirebaseAnalytics(): FirebaseAnalytics {
+        return Firebase.analytics
     }
+
 }
