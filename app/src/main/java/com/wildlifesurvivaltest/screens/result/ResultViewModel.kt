@@ -3,7 +3,7 @@ package com.wildlifesurvivaltest.screens.result
 import android.app.Activity
 import androidx.lifecycle.LiveData
 import com.android.billingclient.api.BillingFlowParams
-import com.android.billingclient.api.SkuDetails
+import com.android.billingclient.api.ProductDetails
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.wildlifesurvivaltest.base.BaseViewModel
 import com.wildlifesurvivaltest.data.prefs.PrefsEntity
@@ -22,7 +22,7 @@ class ResultViewModel @Inject constructor(
     private val billingInteractor: BillingInteractor
 ) : BaseViewModel<ResultContract.Event, ResultContract.State, ResultContract.Effect>(preferences) {
 
-    val skuDetails: LiveData<SkuDetails?> = billingInteractor.skuDetails
+    val productDetails: LiveData<ProductDetails?> = billingInteractor.productDetails
 
     init {
         billingInteractor.init()
@@ -61,11 +61,19 @@ class ResultViewModel @Inject constructor(
     }
 
     private fun launchBillingFlow(activity: Activity) {
-        if (skuDetails.value == null) return
-        val flowParams = BillingFlowParams.newBuilder()
-            .setSkuDetails(skuDetails.value!!)
-            .build()
-        billingInteractor.launchBillingFlow(activity, flowParams)
+        if (productDetails.value != null) {
+            val productDetailsParamsList =
+                listOf(
+                    BillingFlowParams.ProductDetailsParams.newBuilder()
+                        .setProductDetails(productDetails.value!!)
+                        .build()
+                )
+            val billingFlowParams =
+                BillingFlowParams.newBuilder()
+                    .setProductDetailsParamsList(productDetailsParamsList).build()
+
+            billingInteractor.launchBillingFlow(activity, billingFlowParams)
+        } else return
     }
 
     private fun sendOptionClickEvent(eventName: String) {

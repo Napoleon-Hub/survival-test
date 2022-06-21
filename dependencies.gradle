@@ -22,7 +22,7 @@ def libraryVersions = [
         firebaseBoomVersion            : '30.1.0',
         playServicesVersion            : '20.6.0',
         workRuntimeVersion             : '2.7.0',
-        billingVersion                 : '4.1.0',
+        billingVersion                 : '5.0.0',
         playCoreVersion                : '1.10.3',
         playCoreKtxVersion             : '1.8.1',
         userMessagingVersion           : '2.0.0'
