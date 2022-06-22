@@ -39,13 +39,10 @@
     <string name="result_test_share">Я прошел тест на выживание в дикой природе с таким результатом:\n%s\nКак думаешь, а ты бы выжил?)\n\nhttps://play.google.com/store/apps/details?id=com.wildlifesurvivaltest</string>
 
     <!-- Errors -->
-    <string name="dialog_connection_error_title">Проблема с подключением к интернету</string>
-    <string name="dialog_connection_error_description">Упс, чтобы использовать данное преложение необходимо подключение к интернету. Проверьте соединение и попробуйте снова</string>
+    <string name="dialog_connection_error_title">Упс</string>
+    <string name="dialog_connection_error_description">Для продолжения необходимо интернет-соединение. Проверьте подключение и попробуйте снова</string>
     <string name="dialog_connection_error_button">Закрыть</string>
     <string name="toast_choose_error">Пожалуйста, выберите ответ, прежде чем продолжить</string>
-
-
-
 
     <!-- Questions -->
     <string name="question_1">Сперва стоит объяснить тебе правила игры, подопытный. С огромной вероятностью ты можешь не найти ответа, который тебе подходит, ведь учёные умны и не дадут тебе на выбор того, чего ты хочешь.

@@ -20,7 +20,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
-#Models
--keep class com.wildlifesurvivaltest.data.room.entity.** { *; }
-
 -keep class com.google.android.gms.internal.consent_sdk.** { <fields>; }

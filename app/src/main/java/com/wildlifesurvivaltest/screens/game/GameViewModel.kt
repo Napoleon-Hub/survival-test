@@ -1,5 +1,7 @@
 package com.wildlifesurvivaltest.screens.game
 
+import android.content.Context
+import android.content.res.Configuration
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.google.firebase.analytics.FirebaseAnalytics
@@ -10,9 +12,12 @@ import com.wildlifesurvivaltest.domain.models.Answer
 import com.wildlifesurvivaltest.domain.models.Question
 import com.wildlifesurvivaltest.utils.helpers.QuestionsGenerator
 import dagger.hilt.android.lifecycle.HiltViewModel
+import java.util.*
 import javax.inject.Inject
 
 private const val EVENT_QUESTION = "question_"
+private const val LOCALE_RU = "ru"
+private const val LOCALE_EN = "en"
 
 @HiltViewModel
 class GameViewModel @Inject constructor(
@@ -43,7 +48,7 @@ class GameViewModel @Inject constructor(
                     if (isConnected) {
                         sendAnswerQuestionEvent(
                             lastQuestionIndex + 1,
-                            event.context.getString(selectedAnswer.answerResId)
+                            getLocalizedString(event.context)
                         )
                         points += selectedAnswer.answerPoints
                         if (!event.isFinish) {
@@ -68,6 +73,14 @@ class GameViewModel @Inject constructor(
         if (listOfQuestions.last() == _lastQuestion.value) {
             setState { GameContract.State.ViewStateFinishGame }
         }
+    }
+
+    private fun getLocalizedString(context: Context): String {
+        return if (context.resources.configuration.locales[0].language == LOCALE_RU) {
+            val conf = Configuration(context.resources.configuration)
+            conf.setLocale(Locale(LOCALE_EN))
+            context.createConfigurationContext(conf).getString(selectedAnswer.answerResId)
+        } else context.getString(selectedAnswer.answerResId)
     }
 
     private fun sendAnswerQuestionEvent(questionNumber: Int, answer: String) {
